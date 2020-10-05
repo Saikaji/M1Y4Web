@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="header.css">
+    </head>
+    <body>
+        <nav>
+            <ul class="topNav" id="dropDown">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="topNav-Right"><a href="#signin">Sign In</a></li>
+                <li class="topNav-Right"><a href="#signup">Sign Up</a></li>
+                <li class="tropDownIcon"><a href="javascript:void(0);" onclick="dropDownMenu()">&#9776;</a></li>
+            </ul>
+        </nav>
+        <div class="container" id="style-gradient">
+            <div class="row">
+                <div class="col-50 left-side-col">
+                    <div>
+                        <h1 class="size">Crazy Radness</h1>
+                        <h1 class="size">Made for Develops</h1>
+                    </div>
+                    <form>
+                        <div>
+                            <h2>Username</h2>
+                            <input class="input" type="text" placeholder="Username">
+                            <h2>Password</h2>
+                            <input class="input" type="text" placeholder="Password">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-50">
+                    <div class="right-side-col">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <script>
+            function dropDownMenu(){
+                var x = document.getElementById("dropDown");
+                if(x.className === "topNav"){
+                    x.className += " responsive";
+                }
+                else{
+                    x.className = "topNav";
+                }
+            }
+        </script>
+    </body>
+</html>
